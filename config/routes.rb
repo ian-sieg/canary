@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  get 'profile', to: 'profile#index'
+  get 'scheduler', to: 'scheduler#new'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  root 'main#index'
 end
